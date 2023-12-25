@@ -1,0 +1,19 @@
+.top-wrapper {
+    background-color: #222;
+}
+
+.top-wrapper-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+@media (max-width: 500px) {
+    .top-wrapper-content {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+}

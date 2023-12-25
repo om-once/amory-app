@@ -1,0 +1,38 @@
+.search-top {
+    display: flex;
+    align-items: center;
+}
+
+.search-top-form {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.seach-top-input {
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: 11px;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    width: 180px;
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.search-top-btn {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
