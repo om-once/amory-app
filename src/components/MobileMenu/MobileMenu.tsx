@@ -4,7 +4,6 @@ import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
-import Container from '@mui/material/Container'
 import './MobileMenu.scss'
 type Props = {}
 const MobileMenu = (props: Props) => {
