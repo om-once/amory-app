@@ -1,0 +1,17 @@
+.social-top {
+    display: flex;
+    gap: 1px;
+}
+
+.social-top-link {
+    color: #fff;
+    font-size: 14px;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 0.6;
+    }
+}
