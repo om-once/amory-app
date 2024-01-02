@@ -21,8 +21,14 @@
     .mobile-menu-content {
         background-color: #fff;
         width: 100%;
-        overflow: hidden;
         display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s all linear;
+        &.open {
+            max-height: 2000px;
+            overflow: visible;
+        }
     }
     .mobile-menu-list {
         width: 100%;

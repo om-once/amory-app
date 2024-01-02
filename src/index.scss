@@ -48,7 +48,26 @@
     src: url('./fonts/raleway-v29-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-body {
-    font-family: 'Raleway' !important;
+#root {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    background: #f4f4f4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #343434;
+    transition: 0.3s all linear;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
 }

@@ -5,11 +5,21 @@ import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import './MobileMenu.scss'
+import { useState } from 'react'
 type Props = {}
 const MobileMenu = (props: Props) => {
+    const [menuShow, setMenuShow] = useState<string>('mobile-menu-content')
+    const openMobileMenu = () => {
+        setMenuShow((prevState) =>
+            prevState === 'mobile-menu-content'
+                ? 'mobile-menu-content open'
+                : 'mobile-menu-content'
+        )
+    }
     return (
         <div className="mobile-menu">
             <IconButton
+                onClick={openMobileMenu}
                 className="mobile-menu-btn"
                 size="large"
                 edge="start"
@@ -23,7 +33,7 @@ const MobileMenu = (props: Props) => {
                     })}
                 />
             </IconButton>
-            <div className="mobile-menu-content">
+            <div className={menuShow}>
                 <List className="mobile-menu-list">
                     <ListItem className="mobile-menu-item active">
                         <Link
