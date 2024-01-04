@@ -1,0 +1,13 @@
+.advertising-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.advertising-link {
+    display: block;
+    width: 125px;
+    height: 125px;
+    background-image: url('../../../public/images/bannerad.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

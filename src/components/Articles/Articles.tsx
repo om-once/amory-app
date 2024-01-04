@@ -1,6 +1,5 @@
 import ArticlesItem from './ArticlesItem'
 import { ArticleArray } from 'utils/articlesArray'
-console.log(ArticleArray)
 type Props = {}
 const Articles = (props: Props) => {
     return (

@@ -30,8 +30,9 @@ const ArticlesItem = ({
             <CardContent className="article-item-content">
                 <header className="article-item-header">
                     <div className="article-item-categories">
-                        {category.map((item) => (
+                        {category.map((item, index) => (
                             <Link
+                                key={index}
                                 href="#"
                                 underline="none"
                                 className="article-item-category"
@@ -67,7 +68,12 @@ const ArticlesItem = ({
                 </header>
                 <Link underline="none" href="#" className="article-item-image">
                     {image !== '' && (
-                        <CardMedia component="img" image={image} alt={title} />
+                        <CardMedia
+                            key={id}
+                            component="img"
+                            image={image}
+                            alt={title}
+                        />
                     )}
                 </Link>
                 <div className="article-item-description">

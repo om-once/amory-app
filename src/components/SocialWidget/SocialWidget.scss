@@ -1,0 +1,20 @@
+.social-widget {
+    .content {
+        padding: 25px;
+    }
+}
+.social-widget-block {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.social-widget-link {
+    color: #222;
+    font-size: 16px;
+    transition: 0.3s all linear;
+    &:hover {
+        color: #509ba0;
+    }
+}

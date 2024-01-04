@@ -1,0 +1,23 @@
+.categories {
+    .title-h3 {
+        margin-bottom: 0px;
+    }
+}
+.categories-item {
+    padding: 10px 0;
+    margin: 5px 0;
+    &:not(:last-child) {
+        border-bottom: 1px dotted #ddd;
+    }
+}
+
+.categories-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    transition: 0.3s all linear;
+    &:hover {
+        color: #509ba0;
+    }
+}

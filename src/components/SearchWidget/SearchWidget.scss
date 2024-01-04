@@ -1,0 +1,23 @@
+.seacrh-widget {
+    .content {
+        padding: 25px;
+    }
+}
+.seacrh-widget-form {
+    background: #eee;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.seacrh-widget-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    width: 95%;
+    color: #222;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
