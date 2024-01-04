@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import Link from '@mui/material/Link'
 import './Advertising.scss'
 type Props = {}
