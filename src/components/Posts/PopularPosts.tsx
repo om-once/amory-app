@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material'
 import PostsItem from './PostsItem'
-import { popularPostsArray } from 'utils/popularPostsArray'
+import { ArticlesArray } from 'utils/articlesArray'
 type Props = {}
 const PopularPosts = (props: Props) => {
     return (
@@ -9,15 +9,17 @@ const PopularPosts = (props: Props) => {
                 <Typography variant="h3" component="h3" className="title-h3">
                     POPULAR POSTS
                 </Typography>
-                {popularPostsArray.map(({ id, title, date, image }) => (
-                    <PostsItem
-                        key={id}
-                        id={id}
-                        title={title}
-                        date={date}
-                        image={image}
-                    />
-                ))}
+                {ArticlesArray.filter((item) => item.isPopular === true).map(
+                    ({ id, title, date, imageSmall }) => (
+                        <PostsItem
+                            key={id}
+                            id={id}
+                            title={title}
+                            date={date}
+                            image={imageSmall}
+                        />
+                    )
+                )}
             </div>
         </div>
     )

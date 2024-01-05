@@ -7,8 +7,8 @@ type ArticlesItemType = {
     id: number
     category: string[]
     title: string
-    postDate: string
-    postAuthor: string
+    date: string
+    author: string
     comments: number | string
     image: string
     description: string[]
@@ -18,8 +18,8 @@ const ArticlesItem = ({
     id,
     category,
     title,
-    postDate,
-    postAuthor,
+    date,
+    author,
     comments,
     image,
     description,
@@ -52,14 +52,14 @@ const ArticlesItem = ({
                     </Typography>
                     <div className="article-item-info">
                         <Link underline="none" href="#">
-                            {postDate}
+                            {date}
                         </Link>
                         <Link
                             className="article-item-author"
                             underline="hover"
                             href="#"
                         >
-                            {postAuthor}
+                            by {author}
                         </Link>
                         <Link underline="none" href="#">
                             {comments} COMMENTS

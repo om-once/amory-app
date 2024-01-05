@@ -1,16 +1,16 @@
 import ArticlesItem from './ArticlesItem'
-import { ArticleArray } from 'utils/articlesArray'
+import { ArticlesArray } from 'utils/articlesArray'
 type Props = {}
 const Articles = (props: Props) => {
     return (
         <section className="articles">
-            {ArticleArray.map(
+            {ArticlesArray.map(
                 ({
                     id,
                     category,
                     title,
-                    postDate,
-                    postAuthor,
+                    date,
+                    author,
                     comments,
                     image,
                     description,
@@ -21,8 +21,8 @@ const Articles = (props: Props) => {
                         id={id}
                         category={category}
                         title={title}
-                        postDate={postDate}
-                        postAuthor={postAuthor}
+                        date={date}
+                        author={author}
                         comments={comments}
                         image={image}
                         description={description}
