@@ -10,7 +10,7 @@ const PostsItem = ({ title, date, image }: PostsItemType) => {
     return (
         <Card className="posts-item">
             <Link underline="none" className="posts-item-link" href="#">
-                <CardMedia component="img" image={image} alt="green iguana" />
+                <CardMedia component="img" image={image} alt={title} />
             </Link>
             <CardContent className="posts-item-content">
                 <Typography variant="h4" component="h4" className="title-h4">

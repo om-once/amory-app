@@ -1,0 +1,22 @@
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.footer-social-link {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    color: #222;
+    border: 1px solid #222;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s all linear;
+    &:hover {
+        color: #fff;
+        background-color: #222;
+        transform: scale(0.95);
+    }
+}
