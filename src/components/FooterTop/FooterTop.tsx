@@ -8,7 +8,7 @@ const FooterTop = (props: Props) => {
     return (
         <div className="footer-top">
             <Container maxWidth="lg">
-                <Grid container spacing={6}>
+                <Grid container spacing={5}>
                     <Grid item xs={4}>
                         <div className="footer-top-author">
                             <img src="images/amory-logo.png" alt="amory-logo" />
