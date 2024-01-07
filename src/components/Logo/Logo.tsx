@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.png'
 import Typography from '@mui/material/Typography'
-import Link from '@mui/material/Link'
+import { Link } from 'react-router-dom'
 import './Logo.scss'
 type Props = {}
 const Logo = (props: Props) => {
@@ -11,7 +11,7 @@ const Logo = (props: Props) => {
             component="div"
             sx={{ flexGrow: 1, textAlign: 'center', padding: '50px 0 40px 0' }}
         >
-            <Link href="#">
+            <Link to="/">
                 <img src={logo} alt="" />
             </Link>
         </Typography>

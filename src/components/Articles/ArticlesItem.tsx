@@ -1,4 +1,5 @@
-import { Link, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -33,8 +34,7 @@ const ArticlesItem = ({
                         {category.map((item, index) => (
                             <Link
                                 key={index}
-                                href="#"
-                                underline="none"
+                                to="#"
                                 className="article-item-category"
                             >
                                 {item}
@@ -46,27 +46,17 @@ const ArticlesItem = ({
                         component="h2"
                         className="article-item-title"
                     >
-                        <Link underline="none" href="#">
-                            {title}
-                        </Link>
+                        <Link to="#">{title}</Link>
                     </Typography>
                     <div className="article-item-info">
-                        <Link underline="none" href="#">
-                            {date}
-                        </Link>
-                        <Link
-                            className="article-item-author"
-                            underline="hover"
-                            href="#"
-                        >
+                        <Link to="#">{date}</Link>
+                        <Link className="article-item-author" to="#">
                             by {author}
                         </Link>
-                        <Link underline="none" href="#">
-                            {comments} COMMENTS
-                        </Link>
+                        <Link to="#">{comments} COMMENTS</Link>
                     </div>
                 </header>
-                <Link underline="none" href="#" className="article-item-image">
+                <Link to="#" className="article-item-image">
                     {image !== '' && (
                         <CardMedia
                             key={id}
@@ -82,7 +72,7 @@ const ArticlesItem = ({
                     ))}
                 </div>
                 <Typography variant="body2" className="article-item-buttons">
-                    <Link underline="none" href="#" className="btn">
+                    <Link to="#" className="btn">
                         Continue reading
                     </Link>
                 </Typography>

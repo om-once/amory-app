@@ -1,4 +1,5 @@
-import { Card, CardContent, CardMedia, Typography, Link } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 import './PostsItem.scss'
 type PostsItemType = {
     id: number
@@ -9,14 +10,12 @@ type PostsItemType = {
 const PostsItem = ({ title, date, image }: PostsItemType) => {
     return (
         <Card className="posts-item">
-            <Link underline="none" className="posts-item-link" href="#">
+            <Link className="posts-item-link" to="#">
                 <CardMedia component="img" image={image} alt={title} />
             </Link>
             <CardContent className="posts-item-content">
                 <Typography variant="h4" component="h4" className="title-h4">
-                    <Link href="#" underline="none">
-                        {title}
-                    </Link>
+                    <Link to="#">{title}</Link>
                 </Typography>
                 <p className="posts-item-date">{date}</p>
             </CardContent>

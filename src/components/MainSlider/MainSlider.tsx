@@ -13,7 +13,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
-import { Container, Link, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 import './MainSlider.scss'
 type Props = {}
 const MainSlider = (props: Props) => {
@@ -48,11 +49,7 @@ const MainSlider = (props: Props) => {
                                 >
                                     check out perfect beard styles
                                 </Typography>
-                                <Link
-                                    href="#"
-                                    underline="none"
-                                    className="main-slider-btn"
-                                >
+                                <Link to="#" className="main-slider-btn">
                                     read more
                                 </Link>
                             </div>
@@ -80,11 +77,7 @@ const MainSlider = (props: Props) => {
                                 >
                                     get your beard done properly
                                 </Typography>
-                                <Link
-                                    href="#"
-                                    underline="none"
-                                    className="main-slider-btn"
-                                >
+                                <Link to="#" className="main-slider-btn">
                                     read more
                                 </Link>
                             </div>
@@ -110,11 +103,7 @@ const MainSlider = (props: Props) => {
                                 >
                                     a perfect suit for your next meeting
                                 </Typography>
-                                <Link
-                                    href="#"
-                                    underline="none"
-                                    className="main-slider-btn"
-                                >
+                                <Link to="#" className="main-slider-btn">
                                     read more
                                 </Link>
                             </div>

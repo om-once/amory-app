@@ -8,14 +8,14 @@ const ReactFacebook = (props: Props) => {
                 <Typography variant="h3" component="h3" className="title-h3">
                     LIKE US ON FACEBOOK
                 </Typography>
-                <FacebookProvider appId="123456789">
+                {/* <FacebookProvider appId="123456789">
                     <Like
                         href="https://www.facebook.com/PremiumCoding/?ref=embed_page"
                         colorScheme="dark"
                         showFaces
                         share
                     />
-                </FacebookProvider>
+                </FacebookProvider> */}
             </div>
         </div>
     )

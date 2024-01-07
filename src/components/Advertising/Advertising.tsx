@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import Link from '@mui/material/Link'
+import { Link } from 'react-router-dom'
 import './Advertising.scss'
 type Props = {}
 const Advertising = (props: Props) => {
@@ -10,26 +10,10 @@ const Advertising = (props: Props) => {
                     ADVERTISING 125x125
                 </Typography>
                 <div className="advertising-block">
-                    <Link
-                        href="#"
-                        underline="none"
-                        className="advertising-link"
-                    ></Link>
-                    <Link
-                        href="#"
-                        underline="none"
-                        className="advertising-link"
-                    ></Link>
-                    <Link
-                        href="#"
-                        underline="none"
-                        className="advertising-link"
-                    ></Link>
-                    <Link
-                        href="#"
-                        underline="none"
-                        className="advertising-link"
-                    ></Link>
+                    <Link to="#" className="advertising-link"></Link>
+                    <Link to="#" className="advertising-link"></Link>
+                    <Link to="#" className="advertising-link"></Link>
+                    <Link to="#" className="advertising-link"></Link>
                 </div>
             </div>
         </div>

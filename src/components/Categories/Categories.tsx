@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import Link from '@mui/material/Link'
+import { Link } from 'react-router-dom'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import './Categories.scss'
@@ -15,26 +15,20 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            href="#"
-                            underline="none"
+                            to="category/editors-choise"
                         >
                             EDITOR'S CHOICE
                         </Link>
                     </ListItem>
                     <ListItem className="categories-item">
-                        <Link
-                            className="categories-link"
-                            href="#"
-                            underline="none"
-                        >
+                        <Link className="categories-link" to="#">
                             FASHION
                         </Link>
                     </ListItem>
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            href="#"
-                            underline="none"
+                            to="category/front-page-slideshow"
                         >
                             FRONT PAGE SLIDESHOW
                         </Link>
@@ -42,8 +36,7 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            href="#"
-                            underline="none"
+                            to="category/lifestyle"
                         >
                             LIFESTYLE
                         </Link>
@@ -51,18 +44,13 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            href="#"
-                            underline="none"
+                            to="category/photography"
                         >
                             PHOTOGRAPHY
                         </Link>
                     </ListItem>
                     <ListItem className="categories-item">
-                        <Link
-                            className="categories-link"
-                            href="#"
-                            underline="none"
-                        >
+                        <Link className="categories-link" to="category/travel">
                             TRAVEL
                         </Link>
                     </ListItem>
