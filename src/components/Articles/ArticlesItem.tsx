@@ -58,12 +58,7 @@ const ArticlesItem = ({
                 </header>
                 <Link to="#" className="article-item-image">
                     {image !== '' && (
-                        <CardMedia
-                            key={id}
-                            component="img"
-                            image={image}
-                            alt={title}
-                        />
+                        <CardMedia component="img" image={image} alt={title} />
                     )}
                 </Link>
                 <div className="article-item-description">
