@@ -2,7 +2,7 @@ import { Container, Grid } from '@mui/material'
 import MainSlider from 'components/MainSlider/MainSlider'
 import Sidebar from 'components/Sidebar/Sidebar'
 import '../Pages.scss'
-import Pagination from 'components/Pagination/Pagination'
+import Articles from 'components/Articles/Articles'
 type Props = {}
 const Home = (props: Props) => {
     return (
@@ -12,8 +12,7 @@ const Home = (props: Props) => {
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
                         <Grid item xs={8}>
-                            <Pagination categoryName="Home" />
-                            {/* <Pagination articlesPerPage={1} totalPages={4} /> */}
+                            <Articles categoryName="All" />
                         </Grid>
                         <Grid item xs={4}>
                             <Sidebar />
