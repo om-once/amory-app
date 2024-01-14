@@ -15,7 +15,7 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            to="category/editors-choise"
+                            to="/category/editors-choise"
                         >
                             EDITOR'S CHOICE
                         </Link>
@@ -28,7 +28,7 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            to="category/front-page-slideshow"
+                            to="/category/front-page-slideshow"
                         >
                             FRONT PAGE SLIDESHOW
                         </Link>
@@ -36,7 +36,7 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            to="category/lifestyle"
+                            to="/category/lifestyle"
                         >
                             LIFESTYLE
                         </Link>
@@ -44,13 +44,13 @@ const Categories = (props: Props) => {
                     <ListItem className="categories-item">
                         <Link
                             className="categories-link"
-                            to="category/photography"
+                            to="/category/photography"
                         >
                             PHOTOGRAPHY
                         </Link>
                     </ListItem>
                     <ListItem className="categories-item">
-                        <Link className="categories-link" to="category/travel">
+                        <Link className="categories-link" to="/category/travel">
                             TRAVEL
                         </Link>
                     </ListItem>

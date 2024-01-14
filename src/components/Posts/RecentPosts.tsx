@@ -20,13 +20,14 @@ const RecentPosts = (props: Props) => {
                           ? 1
                           : 0
                 })
-                    .map(({ id, title, date, imageSmall }) => (
+                    .map(({ id, title, date, imageSmall, link }) => (
                         <PostsItem
                             key={id}
                             id={id}
                             title={title}
                             date={date}
                             image={imageSmall}
+                            link={link}
                         />
                     ))
                     .slice(0, 3)}

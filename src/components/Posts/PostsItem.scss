@@ -19,6 +19,23 @@
     }
 }
 
+.quote {
+    display: flex;
+    gap: 15px;
+    blockquote {
+        border-left: 5px solid #ddd;
+        padding-left: 15px;
+        margin: 0;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 34px;
+        color: #999;
+    }
+    img {
+        align-self: start;
+    }
+}
+
 .posts-item-content {
     padding: 0 !important;
     width: 100%;

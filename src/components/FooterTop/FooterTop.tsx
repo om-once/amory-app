@@ -11,7 +11,10 @@ const FooterTop = (props: Props) => {
                 <Grid container spacing={5}>
                     <Grid item xs={4}>
                         <div className="footer-top-author">
-                            <img src="images/amory-logo.png" alt="amory-logo" />
+                            <img
+                                src="/images/amory-logo.png"
+                                alt="amory-logo"
+                            />
                             <p className="footer-top-text">
                                 Hello, my name is <strong>Amory.</strong> I am a
                                 blogger living in New York. This is my blog,
