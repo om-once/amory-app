@@ -2,6 +2,7 @@ export type Review = {
     reviewName: string
     reviewText: string
     reviewImage: string
+    reviewDate: string
 }
 
 export type ArticleType = {
@@ -212,36 +213,42 @@ export const ArticlesArray: ArticleType[] = [
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:27 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:26 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'December 3, 2014 at 12:17 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'June 3, 2015 at 12:17 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'April 3, 2016 at 12:22 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'March 5, 2017 at 11:17 pm',
             },
         ],
     },
@@ -525,36 +532,21 @@ export const ArticlesArray: ArticleType[] = [
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:27 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:26 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
+                reviewDate: 'December 3, 2014 at 12:17 pm',
             },
         ],
     },
@@ -654,36 +646,28 @@ export const ArticlesArray: ArticleType[] = [
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:27 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:26 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'December 3, 2014 at 12:17 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
+                reviewDate: 'June 3, 2015 at 12:17 pm',
             },
         ],
     },
@@ -777,44 +761,7 @@ export const ArticlesArray: ArticleType[] = [
         isPopular: false,
         tags: ['accessories', 'shoes'],
         link: '/articles/perfect-accessories',
-        reviews: [
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-        ],
+        reviews: [],
     },
     {
         id: 8,
@@ -906,44 +853,7 @@ export const ArticlesArray: ArticleType[] = [
         isPopular: false,
         tags: ['dinner', 'food', 'lifestyle'],
         link: '/articles/check-our-perfect-beard-styles',
-        reviews: [
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-        ],
+        reviews: [],
     },
     {
         id: 9,
@@ -1035,44 +945,7 @@ export const ArticlesArray: ArticleType[] = [
         isPopular: false,
         tags: ['bike', 'lifestyle', 'motorcycle'],
         link: '/articles/long-bike-ride',
-        reviews: [
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-        ],
+        reviews: [],
     },
     {
         id: 10,
@@ -1164,44 +1037,7 @@ export const ArticlesArray: ArticleType[] = [
         isPopular: false,
         tags: ['chef', 'food', 'lifestyle'],
         link: '/articles/prepare-food-like-a-chef',
-        reviews: [
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-        ],
+        reviews: [],
     },
     {
         id: 11,
@@ -1293,44 +1129,7 @@ export const ArticlesArray: ArticleType[] = [
         isPopular: false,
         tags: ['audio', 'post'],
         link: '/articles/this-is-audio-post',
-        reviews: [
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-            {
-                reviewName: 'Amory',
-                reviewText:
-                    'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
-                reviewImage: '/images/written.jpg',
-            },
-        ],
+        reviews: [],
     },
     {
         id: 12,
@@ -1428,36 +1227,42 @@ export const ArticlesArray: ArticleType[] = [
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:27 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'May 31, 2012 at 9:26 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'December 3, 2014 at 12:17 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'June 3, 2015 at 12:17 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'April 3, 2016 at 12:22 pm',
             },
             {
                 reviewName: 'Amory',
                 reviewText:
                     'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori.',
                 reviewImage: '/images/written.jpg',
+                reviewDate: 'March 5, 2017 at 11:17 pm',
             },
         ],
     },

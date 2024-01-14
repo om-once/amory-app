@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import './ArticlesItem.scss'
 import Reviews from 'components/Reviews/Reviews'
 import { ArticlesArray } from 'utils/articlesArray'
+import { useState } from 'react'
 type ArticlesItemType = {
     id: number
     category: string[]

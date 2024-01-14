@@ -8,6 +8,21 @@ type Props = {
     categoryTitle: string
 }
 const Reviews = ({ categoryTitle }: Props) => {
+    const currentDate = new Date()
+
+    const options = {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+    }
+
+    const formattedDate = currentDate.toLocaleDateString(
+        'en-US',
+        options as Intl.DateTimeFormatOptions
+    )
     const [articles, setArticles] = useState(
         ArticlesArray.filter((item) => item.title === categoryTitle).flatMap(
             (item) => item.reviews
@@ -19,6 +34,7 @@ const Reviews = ({ categoryTitle }: Props) => {
         reviewImage: '/images/written.jpg',
         reviewEmail: '',
         reviewWebsite: '',
+        reviewDate: formattedDate,
     })
 
     const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -61,6 +77,7 @@ const Reviews = ({ categoryTitle }: Props) => {
             reviewImage: '/images/written.jpg',
             reviewEmail: '',
             reviewWebsite: '',
+            reviewDate: formattedDate,
         })
     }
 
@@ -100,7 +117,7 @@ const Reviews = ({ categoryTitle }: Props) => {
                                             </Link>
                                         </Typography>
                                         <p className="reviews-item-date">
-                                            May 31, 2012 at 9:09 pm
+                                            {item?.reviewDate}
                                         </p>
                                         <div className="reviews-item-text">
                                             {item?.reviewText}
