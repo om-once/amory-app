@@ -50,7 +50,7 @@ const Categories = (props: Props) => {
                         </Link>
                     </ListItem>
                     <ListItem className="categories-item">
-                        <Link className="categories-link" to="category/travel">
+                        <Link className="categories-link" to="/category/travel">
                             TRAVEL
                         </Link>
                     </ListItem>

@@ -15,10 +15,14 @@ const Articles = ({ categoryName }: Props) => {
                               title,
                               date,
                               author,
-                              comments,
                               image,
                               description,
+                              descriptionFull,
                               readingTime,
+                              tags,
+                              link,
+                              authorImage,
+                              authorText,
                           }) => (
                               <ArticlesItem
                                   key={id}
@@ -27,10 +31,16 @@ const Articles = ({ categoryName }: Props) => {
                                   title={title}
                                   date={date}
                                   author={author}
-                                  comments={comments}
                                   image={image}
                                   description={description}
+                                  descriptionFull={descriptionFull}
                                   readingTime={readingTime}
+                                  descriptionSet={false}
+                                  tagsSet={false}
+                                  tags={tags}
+                                  link={link}
+                                  authorImage={authorImage}
+                                  authorText={authorText}
                               />
                           )
                       )
@@ -43,10 +53,14 @@ const Articles = ({ categoryName }: Props) => {
                               title,
                               date,
                               author,
-                              comments,
                               image,
                               description,
+                              descriptionFull,
                               readingTime,
+                              tags,
+                              link,
+                              authorImage,
+                              authorText,
                           }) => (
                               <ArticlesItem
                                   key={id}
@@ -55,10 +69,16 @@ const Articles = ({ categoryName }: Props) => {
                                   title={title}
                                   date={date}
                                   author={author}
-                                  comments={comments}
                                   image={image}
                                   description={description}
+                                  descriptionFull={descriptionFull}
                                   readingTime={readingTime}
+                                  descriptionSet={false}
+                                  tagsSet={false}
+                                  tags={tags}
+                                  link={link}
+                                  authorImage={authorImage}
+                                  authorText={authorText}
                               />
                           )
                       )}

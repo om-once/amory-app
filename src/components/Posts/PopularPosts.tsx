@@ -10,13 +10,14 @@ const PopularPosts = (props: Props) => {
                     POPULAR POSTS
                 </Typography>
                 {ArticlesArray.filter((item) => item.isPopular === true).map(
-                    ({ id, title, date, imageSmall }) => (
+                    ({ id, title, date, imageSmall, link }) => (
                         <PostsItem
                             key={id}
                             id={id}
                             title={title}
                             date={date}
                             image={imageSmall}
+                            link={link}
                         />
                     )
                 )}

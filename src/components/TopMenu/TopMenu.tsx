@@ -49,7 +49,7 @@ const TopMenu = (props: Props) => {
                         </ListItem>
                         <ListItem className="top-menu-item">
                             <NavLink
-                                to="category/features"
+                                to="/category/features"
                                 className="top-menu-link"
                             >
                                 Features
@@ -89,7 +89,7 @@ const TopMenu = (props: Props) => {
                         </ListItem>
                         <ListItem className="top-menu-item">
                             <NavLink
-                                to="category/lifestyle"
+                                to="/category/lifestyle"
                                 className="top-menu-link"
                             >
                                 Lifestyle
@@ -97,7 +97,7 @@ const TopMenu = (props: Props) => {
                         </ListItem>
                         <ListItem className="top-menu-item">
                             <NavLink
-                                to="category/travel"
+                                to="/category/travel"
                                 className="top-menu-link"
                             >
                                 Travel
@@ -105,7 +105,7 @@ const TopMenu = (props: Props) => {
                         </ListItem>
                         <ListItem className="top-menu-item">
                             <NavLink
-                                to="category/photography"
+                                to="/category/photography"
                                 className="top-menu-link"
                             >
                                 Photography
@@ -113,7 +113,7 @@ const TopMenu = (props: Props) => {
                         </ListItem>
                         <ListItem className="top-menu-item">
                             <NavLink
-                                to="category/editors-choise"
+                                to="/category/editors-choise"
                                 className="top-menu-link"
                             >
                                 Editor's choice
