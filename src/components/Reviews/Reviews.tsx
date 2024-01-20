@@ -1,91 +1,41 @@
 import { Button, CardContent, List, ListItem, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
 import './Reviews.scss'
-import { ArticlesArray } from 'utils/articlesArray'
-import { useState } from 'react'
-import { Review } from 'utils/articlesArray'
-type Props = {
-    categoryTitle: string
+type Review = {
+    reviewName: string
+    reviewText: string
+    reviewImage: string
+    reviewDate: string
 }
-const Reviews = ({ categoryTitle }: Props) => {
-    const currentDate = new Date()
-
-    const options = {
-        year: 'numeric',
-        month: 'long',
-        day: '2-digit',
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: true,
-    }
-
-    const formattedDate = currentDate.toLocaleDateString(
-        'en-US',
-        options as Intl.DateTimeFormatOptions
-    )
-    const [articles, setArticles] = useState(
-        ArticlesArray.filter((item) => item.title === categoryTitle).flatMap(
-            (item) => item.reviews
-        )
-    )
-    const [newReview, setNewReview] = useState({
-        reviewName: '',
-        reviewText: '',
-        reviewImage: '/images/written.jpg',
-        reviewEmail: '',
-        reviewWebsite: '',
-        reviewDate: formattedDate,
-    })
-
-    const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            reviewName: e.target.value,
-        }))
-    }
-
-    const handleChangeText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            reviewText: e.target.value,
-        }))
-    }
-
-    const handleChangeMail = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            reviewEmail: e.target.value,
-        }))
-    }
-
-    const handleChangeWebsite = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            reviewWebsite: e.target.value,
-        }))
-    }
-
-    const onSend = (e: React.FormEvent) => {
-        e.preventDefault()
-        setArticles((prevState) => {
-            const updatedReviews = [...prevState, newReview]
-            return updatedReviews as (Review | undefined)[]
-        })
-        setNewReview({
-            reviewName: '',
-            reviewText: '',
-            reviewImage: '/images/written.jpg',
-            reviewEmail: '',
-            reviewWebsite: '',
-            reviewDate: formattedDate,
-        })
-    }
-
-    console.log(articles)
-
+type NewReview = {
+    reviewName: string
+    reviewText: string
+    reviewImage: string
+    reviewEmail: string
+    reviewWebsite: string
+    reviewDate: string
+}
+type Props = {
+    reviewsArray: Review[]
+    newReview: NewReview
+    handleChangeName: (e: React.ChangeEvent<HTMLInputElement>) => void
+    handleChangeText: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+    handleChangeMail: (e: React.ChangeEvent<HTMLInputElement>) => void
+    handleChangeWebsite: (e: React.ChangeEvent<HTMLInputElement>) => void
+    onSend: (e: React.FormEvent) => void
+}
+const Reviews = ({
+    reviewsArray,
+    newReview,
+    handleChangeName,
+    handleChangeText,
+    handleChangeMail,
+    handleChangeWebsite,
+    onSend,
+}: Props) => {
     return (
         <>
-            {articles.length !== 0 ? (
+            {reviewsArray.length !== 0 ? (
                 <div className="reviews">
                     <div className="reviews-wrapper">
                         <Typography
@@ -93,17 +43,17 @@ const Reviews = ({ categoryTitle }: Props) => {
                             component="h3"
                             className="reviews-title"
                         >
-                            {articles.length} comments
+                            {reviewsArray.length} comments
                         </Typography>
                     </div>
                     <List className="reviews-list">
-                        {articles.map((item, index) => (
-                            <ListItem key={index} className="reviews-item">
+                        {reviewsArray.map((item, index) => (
+                            <ListItem className="reviews-item" key={index}>
                                 <div className="reviews-item-wrapper">
                                     <div className="reviews-item-image">
                                         <img
-                                            src={item?.reviewImage}
-                                            alt={item?.reviewName}
+                                            src={item.reviewImage}
+                                            alt={item.reviewName}
                                         />
                                     </div>
                                     <div className="reviews-item-info">
@@ -112,15 +62,13 @@ const Reviews = ({ categoryTitle }: Props) => {
                                             component="h4"
                                             className="reviews-item-title"
                                         >
-                                            <Link to="">
-                                                {item?.reviewName}
-                                            </Link>
+                                            <Link to="">{item.reviewName}</Link>
                                         </Typography>
                                         <p className="reviews-item-date">
-                                            {item?.reviewDate}
+                                            {item.reviewDate}
                                         </p>
                                         <div className="reviews-item-text">
-                                            {item?.reviewText}
+                                            {item.reviewText}
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +77,7 @@ const Reviews = ({ categoryTitle }: Props) => {
                     </List>
                 </div>
             ) : null}
-            <form onSubmit={onSend} className="reviews-form">
+            <form className="reviews-form" onSubmit={onSend}>
                 <CardContent>
                     <div className="reviews-wrapper">
                         <Typography
@@ -144,8 +92,8 @@ const Reviews = ({ categoryTitle }: Props) => {
                         <div className="reviews-form-group">
                             <textarea
                                 className="reviews-form-input reviews-form-textarea"
-                                value={newReview.reviewText}
                                 onChange={handleChangeText}
+                                value={newReview.reviewText}
                             ></textarea>
                         </div>
                         <div className="reviews-form-group">
@@ -156,9 +104,9 @@ const Reviews = ({ categoryTitle }: Props) => {
                             <input
                                 type="text"
                                 className="reviews-form-input"
-                                required
                                 onChange={handleChangeName}
                                 value={newReview.reviewName}
+                                required
                             />
                         </div>
                         <div className="reviews-form-group">
@@ -169,9 +117,9 @@ const Reviews = ({ categoryTitle }: Props) => {
                             <input
                                 type="email"
                                 className="reviews-form-input"
-                                required
-                                value={newReview.reviewEmail}
                                 onChange={handleChangeMail}
+                                value={newReview.reviewEmail}
+                                required
                             />
                         </div>
                         <div className="reviews-form-group">
@@ -182,8 +130,8 @@ const Reviews = ({ categoryTitle }: Props) => {
                             <input
                                 type="text"
                                 className="reviews-form-input"
-                                value={newReview.reviewWebsite}
                                 onChange={handleChangeWebsite}
+                                value={newReview.reviewWebsite}
                             />
                         </div>
                         <Button type="submit" className="btn reviews-form-btn">

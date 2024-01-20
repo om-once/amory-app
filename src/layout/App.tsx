@@ -7,10 +7,13 @@ import Home from 'pages/Home/Home'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import Article from 'pages/Articles/Article'
 import Category from 'pages/category/Category'
+import ScrollTop from 'components/ScrollTop/ScrollTop'
 type Props = {}
+
 const App = (props: Props) => {
     return (
         <StyledEngineProvider injectFirst>
+            <ScrollTop />
             <CssBaseline />
             <Header />
             <Routes>

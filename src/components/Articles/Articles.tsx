@@ -23,6 +23,7 @@ const Articles = ({ categoryName }: Props) => {
                               link,
                               authorImage,
                               authorText,
+                              reviews,
                           }) => (
                               <ArticlesItem
                                   key={id}
@@ -61,6 +62,7 @@ const Articles = ({ categoryName }: Props) => {
                               link,
                               authorImage,
                               authorText,
+                              reviews,
                           }) => (
                               <ArticlesItem
                                   key={id}
