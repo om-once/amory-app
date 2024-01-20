@@ -21,7 +21,7 @@ export type ArticleType = {
     isPopular: boolean
     tags: string[]
     link: string
-    reviews?: Review[]
+    reviews: Review[]
 }
 
 export const ArticlesArray: ArticleType[] = [

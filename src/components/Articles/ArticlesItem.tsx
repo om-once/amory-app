@@ -4,6 +4,8 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import './ArticlesItem.scss'
+import { useState } from 'react'
+import { ArticlesArray } from 'utils/articlesArray'
 import Reviews from 'components/Reviews/Reviews'
 type ArticlesItemType = {
     id: number
@@ -39,6 +41,79 @@ const ArticlesItem = ({
     authorImage,
     authorText,
 }: ArticlesItemType) => {
+    const currentDate: Date = new Date()
+
+    const options: Intl.DateTimeFormatOptions = {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+    }
+
+    const formattedDate: string = currentDate.toLocaleDateString(
+        'en-US',
+        options
+    )
+    console.log(formattedDate)
+
+    const [reviewsArray, setReviewsArray] = useState(
+        ArticlesArray.filter((item) => item.title === title).flatMap(
+            (item) => item.reviews
+        )
+    )
+    const [newReview, setNewReview] = useState({
+        reviewName: '',
+        reviewText: '',
+        reviewImage: '/images/written.jpg',
+        reviewEmail: '',
+        reviewWebsite: '',
+        reviewDate: formattedDate,
+    })
+    const handleChangeName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setNewReview((prevState) => ({
+            ...prevState,
+            reviewName: e.target.value,
+        }))
+    }
+
+    const handleChangeText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setNewReview((prevState) => ({
+            ...prevState,
+            reviewText: e.target.value,
+        }))
+    }
+
+    const handleChangeMail = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setNewReview((prevState) => ({
+            ...prevState,
+            reviewEmail: e.target.value,
+        }))
+    }
+
+    const handleChangeWebsite = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setNewReview((prevState) => ({
+            ...prevState,
+            reviewWebsite: e.target.value,
+        }))
+    }
+
+    const onSend = (e: React.FormEvent) => {
+        e.preventDefault()
+        setReviewsArray((prevState) => {
+            return [...prevState, newReview]
+        })
+        setNewReview({
+            reviewName: '',
+            reviewText: '',
+            reviewImage: '/images/written.jpg',
+            reviewEmail: '',
+            reviewWebsite: '',
+            reviewDate: formattedDate,
+        })
+    }
+
     return (
         <Card className="article-item">
             <CardContent className="article-item-content">
@@ -75,7 +150,7 @@ const ArticlesItem = ({
                         <Link className="article-item-author" to="#">
                             by {author}
                         </Link>
-                        <Link to="#"> {} COMMENTS</Link>
+                        <Link to="#">{reviewsArray.length} Comments</Link>
                     </div>
                 </header>
                 <Link to={link} className="article-item-image">
@@ -142,7 +217,15 @@ const ArticlesItem = ({
                             </div>
                         </CardContent>
                     </div>
-                    <Reviews categoryTitle={title} />
+                    <Reviews
+                        reviewsArray={reviewsArray}
+                        newReview={newReview}
+                        handleChangeName={handleChangeName}
+                        handleChangeText={handleChangeText}
+                        handleChangeMail={handleChangeMail}
+                        handleChangeWebsite={handleChangeWebsite}
+                        onSend={onSend}
+                    />
                 </>
             )}
         </Card>
