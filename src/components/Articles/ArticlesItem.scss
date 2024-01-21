@@ -117,6 +117,17 @@
     text-align: center;
     margin: 20px 0;
 }
+.article-item-share {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    button {
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
 
 .article-item-footer {
     display: flex;

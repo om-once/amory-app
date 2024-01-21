@@ -18,9 +18,9 @@ const App = (props: Props) => {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/about-us/" element={<AboutUs />} />
                 <Route
-                    path="/category/lifestyle"
+                    path="/category/lifestyle/"
                     element={
                         <Category
                             categoryPage="main-content lifestyle"
@@ -29,7 +29,7 @@ const App = (props: Props) => {
                     }
                 />
                 <Route
-                    path="/category/editors-choise"
+                    path="/category/editors-choise/"
                     element={
                         <Category
                             categoryPage="main-content editors-choise"
@@ -38,7 +38,7 @@ const App = (props: Props) => {
                     }
                 />
                 <Route
-                    path="/category/travel"
+                    path="/category/travel/"
                     element={
                         <Category
                             categoryPage="main-content travel"
@@ -47,7 +47,7 @@ const App = (props: Props) => {
                     }
                 />
                 <Route
-                    path="/category/photography"
+                    path="/category/photography/"
                     element={
                         <Category
                             categoryPage="main-content photography"
@@ -56,7 +56,7 @@ const App = (props: Props) => {
                     }
                 />
                 <Route
-                    path="/category/front-page-slideshow"
+                    path="/category/front-page-slideshow/"
                     element={
                         <Category
                             categoryPage="main-content front-page-slideshow"
@@ -65,19 +65,19 @@ const App = (props: Props) => {
                     }
                 />
                 <Route
-                    path="/articles/how-to-become-your-own-boss"
+                    path="/articles/how-to-become-your-own-boss/"
                     element={
                         <Article categoryTitle="HOW TO BECOME YOUR OWN BOSS" />
                     }
                 />
                 <Route
-                    path="/articles/a-perfect-suit-for-your-next-mitting"
+                    path="/articles/a-perfect-suit-for-your-next-mitting/"
                     element={
                         <Article categoryTitle="A PERFECT SUIT FOR YOUR NEXT MEETING" />
                     }
                 />
                 <Route
-                    path="/articles/this-is-a-galery-post"
+                    path="/articles/this-is-a-galery-post/"
                     element={<Article categoryTitle="THIS IS A GALLERY POST" />}
                 />
                 <Route
@@ -85,43 +85,43 @@ const App = (props: Props) => {
                     element={<Article categoryTitle="THIS IS A VIDEO POST" />}
                 />
                 <Route
-                    path="/articles/get-your-beard-done-properly"
+                    path="/articles/get-your-beard-done-properly/"
                     element={
                         <Article categoryTitle="GET YOUR BEARD DONE PROPERLY" />
                     }
                 />
                 <Route
-                    path="/articles/best-breakfast-place-to-visit"
+                    path="/articles/best-breakfast-place-to-visit/"
                     element={
                         <Article categoryTitle="BEST BREAKFAST PLACE TO VISIT" />
                     }
                 />
                 <Route
-                    path="/articles/perfect-accessories"
+                    path="/articles/perfect-accessories/"
                     element={<Article categoryTitle="PERFECT ACCESSORIES" />}
                 />
                 <Route
-                    path="/articles/check-our-perfect-beard-styles"
+                    path="/articles/check-our-perfect-beard-styles/"
                     element={
                         <Article categoryTitle="CHECK OUT PERFECT BEARD STYLES" />
                     }
                 />
                 <Route
-                    path="/articles/long-bike-ride"
+                    path="/articles/long-bike-ride/"
                     element={<Article categoryTitle="LONG BIKE RIDE" />}
                 />
                 <Route
-                    path="/articles/prepare-food-like-a-chef"
+                    path="/articles/prepare-food-like-a-chef/"
                     element={
                         <Article categoryTitle="PREPARE FOOD LIKE A CHEF" />
                     }
                 />
                 <Route
-                    path="/articles/this-is-audio-post"
+                    path="/articles/this-is-audio-post/"
                     element={<Article categoryTitle="THIS IS AUDIO POST" />}
                 />
                 <Route
-                    path="/articles/out-trip-into-the-wild"
+                    path="/articles/out-trip-into-the-wild/"
                     element={<Article categoryTitle="OUT TRIP INTO THE WILD" />}
                 />
             </Routes>

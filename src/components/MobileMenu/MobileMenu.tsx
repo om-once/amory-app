@@ -111,7 +111,7 @@ const MobileMenu = (props: Props) => {
                     </ListItem>
                     <ListItem className="mobile-menu-item">
                         <Link
-                            to="/category/lifestyle"
+                            to="/category/lifestyle/"
                             className="mobile-menu-link"
                         >
                             Lifestyle
@@ -129,7 +129,7 @@ const MobileMenu = (props: Props) => {
                     </ListItem>
                     <ListItem className="mobile-menu-item">
                         <Link
-                            to="category/editors-choise"
+                            to="category/editors-choise/"
                             className="mobile-menu-link"
                         >
                             Editor's choice

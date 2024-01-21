@@ -114,7 +114,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: true,
         tags: ['boss', 'lifestyle'],
-        link: '/articles/how-to-become-your-own-boss',
+        link: '/articles/how-to-become-your-own-boss/',
         reviews: [],
     },
     {
@@ -206,7 +206,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: true,
         tags: ['decor', 'holidays', 'lifestyle'],
-        link: '/articles/a-perfect-suit-for-your-next-mitting',
+        link: '/articles/a-perfect-suit-for-your-next-mitting/',
         reviews: [
             {
                 reviewName: 'Amory',
@@ -341,7 +341,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 1,
         isPopular: true,
         tags: ['gallery', 'lifestyle'],
-        link: '/articles/this-is-a-galery-post',
+        link: '/articles/this-is-a-galery-post/',
         reviews: [],
     },
     {
@@ -433,7 +433,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 2,
         isPopular: false,
         tags: ['photography', 'video'],
-        link: '/articles/this-is-a-video-post',
+        link: '/articles/this-is-a-video-post/',
         reviews: [],
     },
     {
@@ -525,7 +525,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['farm', 'travel'],
-        link: '/articles/get-your-beard-done-properly',
+        link: '/articles/get-your-beard-done-properly/',
         reviews: [
             {
                 reviewName: 'Amory',
@@ -639,7 +639,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['travel'],
-        link: '/articles/best-breakfast-place-to-visit',
+        link: '/articles/best-breakfast-place-to-visit/',
         reviews: [
             {
                 reviewName: 'Amory',
@@ -760,7 +760,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['accessories', 'shoes'],
-        link: '/articles/perfect-accessories',
+        link: '/articles/perfect-accessories/',
         reviews: [],
     },
     {
@@ -852,7 +852,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['dinner', 'food', 'lifestyle'],
-        link: '/articles/check-our-perfect-beard-styles',
+        link: '/articles/check-our-perfect-beard-styles/',
         reviews: [],
     },
     {
@@ -944,7 +944,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['bike', 'lifestyle', 'motorcycle'],
-        link: '/articles/long-bike-ride',
+        link: '/articles/long-bike-ride/',
         reviews: [],
     },
     {
@@ -1036,7 +1036,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['chef', 'food', 'lifestyle'],
-        link: '/articles/prepare-food-like-a-chef',
+        link: '/articles/prepare-food-like-a-chef/',
         reviews: [],
     },
     {
@@ -1128,7 +1128,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 3,
         isPopular: false,
         tags: ['audio', 'post'],
-        link: '/articles/this-is-audio-post',
+        link: '/articles/this-is-audio-post/',
         reviews: [],
     },
     {
@@ -1220,7 +1220,7 @@ export const ArticlesArray: ArticleType[] = [
         readingTime: 5,
         isPopular: false,
         tags: ['travel'],
-        link: '/articles/out-trip-into-the-wild',
+        link: '/articles/out-trip-into-the-wild/',
         reviews: [
             {
                 reviewName: 'Amory',
