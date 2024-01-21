@@ -7,6 +7,10 @@ import './ArticlesItem.scss'
 import { useState } from 'react'
 import { ArticlesArray } from 'utils/articlesArray'
 import Reviews from 'components/Reviews/Reviews'
+import { useAppDispatch, useAppSelector } from 'store/hooks'
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import { toggleLikeState } from 'store/likeReducer'
 type ArticlesItemType = {
     id: number
     category: string[]
@@ -114,6 +118,9 @@ const ArticlesItem = ({
         })
     }
 
+    const isLiked = useAppSelector((state) => state.articlesLikeState[id])
+    const dispatch = useAppDispatch()
+
     return (
         <Card className="article-item">
             <CardContent className="article-item-content">
@@ -150,7 +157,12 @@ const ArticlesItem = ({
                         <Link className="article-item-author" to="#">
                             by {author}
                         </Link>
-                        <Link to="#">{reviewsArray.length} Comments</Link>
+                        <Link to="#">
+                            {reviewsArray.length === 0
+                                ? 'No'
+                                : reviewsArray.length}{' '}
+                            Comments
+                        </Link>
                     </div>
                 </header>
                 <Link to={link} className="article-item-image">
@@ -191,7 +203,15 @@ const ArticlesItem = ({
                             ))}
                         </div>
                     )}
-                    <p className="article-item-share">SHARE:</p>
+                    <p className="article-item-share">
+                        <span>like:</span>
+                        <button
+                            type="button"
+                            onClick={() => dispatch(toggleLikeState(id))}
+                        >
+                            {isLiked ? <FavoriteIcon /> : <FavoriteBorder />}
+                        </button>
+                    </p>
                 </footer>
             </CardContent>
             {tagsSet === false ? null : (
