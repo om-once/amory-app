@@ -206,6 +206,7 @@ const ArticlesItem = ({
                     <p className="article-item-share">
                         <span>like:</span>
                         <button
+                            className="like"
                             type="button"
                             onClick={() => dispatch(toggleLikeState(id))}
                         >
