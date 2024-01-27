@@ -12,7 +12,10 @@ const SocialWidget = (props: Props) => {
                     GET SOCIAL
                 </Typography>
                 <div className="social-widget-block">
-                    <Link href="#" className="social-widget-link">
+                    <Link
+                        href="https://twitter.com/"
+                        className="social-widget-link"
+                    >
                         <FontAwesomeIcon
                             icon={icon({
                                 name: 'twitter',
@@ -20,7 +23,10 @@ const SocialWidget = (props: Props) => {
                             })}
                         />
                     </Link>
-                    <Link href="#" className="social-widget-link">
+                    <Link
+                        href="https://www.facebook.com/"
+                        className="social-widget-link"
+                    >
                         <FontAwesomeIcon
                             icon={icon({
                                 name: 'facebook-f',
@@ -28,7 +34,10 @@ const SocialWidget = (props: Props) => {
                             })}
                         />
                     </Link>
-                    <Link href="#" className="social-widget-link">
+                    <Link
+                        href="https://dribbble.com/"
+                        className="social-widget-link"
+                    >
                         <FontAwesomeIcon
                             icon={icon({
                                 name: 'dribbble',
@@ -36,12 +45,18 @@ const SocialWidget = (props: Props) => {
                             })}
                         />
                     </Link>
-                    <Link href="#" className="social-widget-link">
+                    <Link
+                        href="https://www.flickr.com/"
+                        className="social-widget-link"
+                    >
                         <FontAwesomeIcon
                             icon={icon({ name: 'flickr', style: 'brands' })}
                         />
                     </Link>
-                    <Link href="#" className="social-widget-link">
+                    <Link
+                        href="https://pinterest.com/"
+                        className="social-widget-link"
+                    >
                         <FontAwesomeIcon
                             icon={icon({
                                 name: 'pinterest',

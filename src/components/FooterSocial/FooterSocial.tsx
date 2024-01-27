@@ -6,7 +6,7 @@ type Props = {}
 const FooterSocial = (props: Props) => {
     return (
         <div className="footer-social">
-            <Link href="#" className="footer-social-link">
+            <Link href="https://twitter.com/" className="footer-social-link">
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'twitter',
@@ -14,7 +14,10 @@ const FooterSocial = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="#" className="footer-social-link">
+            <Link
+                href="https://www.facebook.com/"
+                className="footer-social-link"
+            >
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'facebook-f',
@@ -22,7 +25,7 @@ const FooterSocial = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="#" className="footer-social-link">
+            <Link href="https://dribbble.com/" className="footer-social-link">
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'dribbble',
@@ -30,12 +33,12 @@ const FooterSocial = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="#" className="footer-social-link">
+            <Link href="https://www.flickr.com/" className="footer-social-link">
                 <FontAwesomeIcon
                     icon={icon({ name: 'flickr', style: 'brands' })}
                 />
             </Link>
-            <Link href="#" className="footer-social-link">
+            <Link href="https://pinterest.com/" className="footer-social-link">
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'pinterest',
