@@ -11,10 +11,10 @@ const Category = ({ categoryPage, categoryType }: Props) => {
             <div className={categoryPage}>
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
-                        <Grid item xs={8}>
+                        <Grid item md={8} xs={12}>
                             <Articles categoryName={categoryType} />
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item md={4} xs={12}>
                             <Sidebar />
                         </Grid>
                     </Grid>

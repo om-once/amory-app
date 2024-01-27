@@ -93,14 +93,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -185,14 +185,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -320,14 +320,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -412,14 +412,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -504,14 +504,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -618,14 +618,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -739,14 +739,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -831,14 +831,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -923,14 +923,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -1015,14 +1015,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -1107,14 +1107,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -1199,14 +1199,14 @@ export const ArticlesArray: ArticleType[] = [
             nobis eleifend option congue nihil imperdiet doming id quod mazim
             placerat facer possim assum.
           </p>
-          <h3 class="article-item-title">EXAMPLE OF A LIST</h3>
+          <h3 class="title-h2">EXAMPLE OF A LIST</h3>
           <ul>
             <li>This is a list item number 1</li>
             <li>This is a list item number 2</li>
             <li>This is a list item number 3</li>
             <li>This is a list item number 4</li>
           </ul>
-          <h3 class="article-item-title">CONCLUSION</h3>
+          <h3 class="title-h2">CONCLUSION</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

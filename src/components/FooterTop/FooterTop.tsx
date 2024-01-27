@@ -9,7 +9,7 @@ const FooterTop = (props: Props) => {
         <div className="footer-top">
             <Container maxWidth="lg">
                 <Grid container spacing={5}>
-                    <Grid item xs={4}>
+                    <Grid item lg={4} md={6} xs={12}>
                         <div className="footer-top-author">
                             <img
                                 src="/images/amory-logo.png"
@@ -23,10 +23,10 @@ const FooterTop = (props: Props) => {
                         </div>
                         <FooterSocial />
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item lg={4} md={6} xs={12}>
                         <LatestPosts />
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item lg={4} md={6} xs={12}>
                         <Categories />
                     </Grid>
                 </Grid>

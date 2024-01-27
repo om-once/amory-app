@@ -8,6 +8,7 @@ import './MobileMenu.scss'
 import { useState } from 'react'
 type Props = {}
 const MobileMenu = (props: Props) => {
+    const menuMobileItems = document.querySelectorAll('.mobile-menu-item')
     const [menuShow, setMenuShow] = useState<string>('mobile-menu-content')
     const openMobileMenu = () => {
         setMenuShow((prevState) =>
@@ -15,6 +16,12 @@ const MobileMenu = (props: Props) => {
                 ? 'mobile-menu-content open'
                 : 'mobile-menu-content'
         )
+    }
+    const closeMobileMenu = () => {
+        setMenuShow('mobile-menu-content')
+    }
+    for (let item of menuMobileItems) {
+        item.addEventListener('click', closeMobileMenu)
     }
     return (
         <div className="mobile-menu">
@@ -35,7 +42,7 @@ const MobileMenu = (props: Props) => {
             </IconButton>
             <div className={menuShow}>
                 <List className="mobile-menu-list">
-                    <ListItem className="mobile-menu-item active">
+                    <ListItem className="mobile-menu-item">
                         <Link to="/" className="mobile-menu-link">
                             Home
                         </Link>
@@ -73,7 +80,7 @@ const MobileMenu = (props: Props) => {
                         </List>
                     </ListItem>
                     <ListItem className="mobile-menu-item">
-                        <Link to="#" className="mobile-menu-link">
+                        <Link to="/" className="mobile-menu-link">
                             Features
                         </Link>
                         <List className="mobile-menu-sub">
@@ -118,12 +125,18 @@ const MobileMenu = (props: Props) => {
                         </Link>
                     </ListItem>
                     <ListItem className="mobile-menu-item">
-                        <Link to="#" className="mobile-menu-link">
+                        <Link
+                            to="/category/travel/"
+                            className="mobile-menu-link"
+                        >
                             Travel
                         </Link>
                     </ListItem>
                     <ListItem className="mobile-menu-item">
-                        <Link to="#" className="mobile-menu-link">
+                        <Link
+                            to="/category/photography/"
+                            className="mobile-menu-link"
+                        >
                             Photography
                         </Link>
                     </ListItem>
@@ -162,7 +175,7 @@ const MobileMenu = (props: Props) => {
                             </ListItem>
                             <ListItem className="mobile-menu-item">
                                 <Link
-                                    to="about-us"
+                                    to="/about-us/"
                                     className="mobile-menu-link"
                                 >
                                     About Us

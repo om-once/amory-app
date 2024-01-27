@@ -11,10 +11,10 @@ const Home = (props: Props) => {
             <div className="main-content home">
                 <Container maxWidth="lg">
                     <Grid container spacing={3}>
-                        <Grid item xs={8}>
+                        <Grid item md={8} xs={12}>
                             <Articles categoryName="All" />
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item md={4} xs={12}>
                             <Sidebar />
                         </Grid>
                     </Grid>

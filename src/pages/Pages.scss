@@ -1,3 +1,41 @@
 .main-content {
-    padding: 70px 0 100px 0;
+    padding: 70px 0 70px 0;
+    @media (max-width: 768px) {
+        padding: 50px 0 30px 0;
+    }
+}
+
+.about-us-content {
+    background-color: #fff;
+    .send-form-textarea {
+        margin-top: 0;
+    }
+}
+
+.description-float {
+    p {
+        span {
+            display: block;
+            float: left;
+            font-size: 98px;
+            margin: 32px 10px 10px 0;
+            font-weight: 700;
+            color: #333;
+        }
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+}
+
+.send-form-btn_black {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    &:hover {
+        background-color: #509ba0;
+        border-color: #509ba0;
+    }
 }

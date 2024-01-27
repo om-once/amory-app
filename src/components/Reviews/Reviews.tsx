@@ -77,7 +77,7 @@ const Reviews = ({
                     </List>
                 </div>
             ) : null}
-            <form className="reviews-form" onSubmit={onSend}>
+            <form className="send-form" onSubmit={onSend}>
                 <CardContent>
                     <div className="reviews-wrapper">
                         <Typography
@@ -88,53 +88,53 @@ const Reviews = ({
                             LEAVE A COMMENT
                         </Typography>
                     </div>
-                    <div className="reviews-form-content">
-                        <div className="reviews-form-group">
+                    <div className="send-form-content">
+                        <div className="send-form-group">
                             <textarea
-                                className="reviews-form-input reviews-form-textarea"
+                                className="send-form-input send-form-textarea"
                                 onChange={handleChangeText}
                                 value={newReview.reviewText}
                             ></textarea>
                         </div>
-                        <div className="reviews-form-group">
-                            <label htmlFor="" className="reviews-form-label">
+                        <div className="send-form-group">
+                            <label htmlFor="" className="send-form-label">
                                 Name <small>(required)</small>
                             </label>
                             <br />
                             <input
                                 type="text"
-                                className="reviews-form-input"
+                                className="send-form-input"
                                 onChange={handleChangeName}
                                 value={newReview.reviewName}
                                 required
                             />
                         </div>
-                        <div className="reviews-form-group">
-                            <label htmlFor="" className="reviews-form-label">
+                        <div className="send-form-group">
+                            <label htmlFor="" className="send-form-label">
                                 Mail <small>(required)</small>
                             </label>
                             <br />
                             <input
                                 type="email"
-                                className="reviews-form-input"
+                                className="send-form-input"
                                 onChange={handleChangeMail}
                                 value={newReview.reviewEmail}
                                 required
                             />
                         </div>
-                        <div className="reviews-form-group">
-                            <label htmlFor="" className="reviews-form-label">
+                        <div className="send-form-group">
+                            <label htmlFor="" className="send-form-label">
                                 Website
                             </label>
                             <br />
                             <input
                                 type="text"
-                                className="reviews-form-input"
+                                className="send-form-input"
                                 onChange={handleChangeWebsite}
                                 value={newReview.reviewWebsite}
                             />
                         </div>
-                        <Button type="submit" className="btn reviews-form-btn">
+                        <Button type="submit" className="btn send-form-btn">
                             leave a comment
                         </Button>
                     </div>

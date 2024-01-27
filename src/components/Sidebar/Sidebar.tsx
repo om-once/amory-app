@@ -4,7 +4,6 @@ import Categories from 'components/Categories/Categories'
 import './Sidebar.scss'
 import Subscribe from 'components/Subscribe/Subscribe'
 import TagCloud from 'components/TagCloud/TagCloud'
-import ReactFacebook from 'components/ReactFacebook/ReactFacebook'
 import RecentPosts from 'components/Posts/RecentPosts'
 import SearchWidget from 'components/SearchWidget/SearchWidget'
 import Advertising from 'components/Advertising/Advertising'
@@ -18,7 +17,6 @@ const Sidebar = (props: Props) => {
             <Categories />
             <Subscribe />
             <TagCloud />
-            <ReactFacebook />
             <RecentPosts />
             <SearchWidget />
             <Advertising />
