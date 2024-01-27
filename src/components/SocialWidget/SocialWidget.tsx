@@ -15,6 +15,7 @@ const SocialWidget = (props: Props) => {
                     <Link
                         href="https://twitter.com/"
                         className="social-widget-link"
+                        target="_blank"
                     >
                         <FontAwesomeIcon
                             icon={icon({
@@ -26,6 +27,7 @@ const SocialWidget = (props: Props) => {
                     <Link
                         href="https://www.facebook.com/"
                         className="social-widget-link"
+                        target="_blank"
                     >
                         <FontAwesomeIcon
                             icon={icon({
@@ -37,6 +39,7 @@ const SocialWidget = (props: Props) => {
                     <Link
                         href="https://dribbble.com/"
                         className="social-widget-link"
+                        target="_blank"
                     >
                         <FontAwesomeIcon
                             icon={icon({
@@ -48,6 +51,7 @@ const SocialWidget = (props: Props) => {
                     <Link
                         href="https://www.flickr.com/"
                         className="social-widget-link"
+                        target="_blank"
                     >
                         <FontAwesomeIcon
                             icon={icon({ name: 'flickr', style: 'brands' })}
@@ -56,6 +60,7 @@ const SocialWidget = (props: Props) => {
                     <Link
                         href="https://pinterest.com/"
                         className="social-widget-link"
+                        target="_blank"
                     >
                         <FontAwesomeIcon
                             icon={icon({

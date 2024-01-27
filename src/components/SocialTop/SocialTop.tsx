@@ -6,7 +6,11 @@ type Props = {}
 const SocialTop = (props: Props) => {
     return (
         <div className="social-top">
-            <Link href="https://twitter.com/" className="social-top-link">
+            <Link
+                href="https://twitter.com/"
+                className="social-top-link"
+                target="_blank"
+            >
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'twitter',
@@ -14,7 +18,11 @@ const SocialTop = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="https://www.facebook.com/" className="social-top-link">
+            <Link
+                href="https://www.facebook.com/"
+                className="social-top-link"
+                target="_blank"
+            >
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'facebook-f',
@@ -22,7 +30,11 @@ const SocialTop = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="https://dribbble.com/" className="social-top-link">
+            <Link
+                href="https://dribbble.com/"
+                className="social-top-link"
+                target="_blank"
+            >
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'dribbble',
@@ -30,12 +42,20 @@ const SocialTop = (props: Props) => {
                     })}
                 />
             </Link>
-            <Link href="https://www.flickr.com/" className="social-top-link">
+            <Link
+                href="https://www.flickr.com/"
+                className="social-top-link"
+                target="_blank"
+            >
                 <FontAwesomeIcon
                     icon={icon({ name: 'flickr', style: 'brands' })}
                 />
             </Link>
-            <Link href="https://pinterest.com/" className="social-top-link">
+            <Link
+                href="https://pinterest.com/"
+                className="social-top-link"
+                target="_blank"
+            >
                 <FontAwesomeIcon
                     icon={icon({
                         name: 'pinterest',
