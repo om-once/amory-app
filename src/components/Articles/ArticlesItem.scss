@@ -116,6 +116,11 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    @media (max-width: 768px) {
+        span {
+            display: none;
+        }
+    }
 }
 
 .like {
@@ -136,10 +141,6 @@
         color: #000;
         font-weight: 700;
         letter-spacing: 2px;
-    }
-    @media (max-width: 430px) {
-        flex-direction: column;
-        gap: 0;
     }
 }
 
