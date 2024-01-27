@@ -82,6 +82,13 @@
         &.article-item-author {
             color: #509ba0;
         }
+        @media (max-width: 768px) {
+            gap: 10px;
+        }
+    }
+    @media (max-width: 768px) {
+        column-gap: 10px;
+        row-gap: 5px;
     }
 }
 
