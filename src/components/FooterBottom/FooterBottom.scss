@@ -7,6 +7,15 @@
         margin: 0;
     }
 }
+.footer-bottom-left {
+    @media (max-width: 899px) {
+        text-align: center;
+    }
+}
 .footer-bottom-right {
     text-align: end;
+    @media (max-width: 899px) {
+        text-align: center;
+        margin-top: -30px !important;
+    }
 }

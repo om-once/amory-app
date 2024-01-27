@@ -15,6 +15,7 @@ import 'swiper/css/scrollbar'
 import 'swiper/css/effect-fade'
 import { Container, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
+import { TypeAnimation } from 'react-type-animation'
 import './MainSlider.scss'
 type Props = {}
 const MainSlider = (props: Props) => {
@@ -47,9 +48,21 @@ const MainSlider = (props: Props) => {
                                     component="h1"
                                     variant="h1"
                                 >
-                                    check out perfect beard styles
+                                    <TypeAnimation
+                                        sequence={[
+                                            '',
+                                            2000,
+                                            'check out perfect beard styles',
+                                            2000,
+                                        ]}
+                                        speed={10}
+                                        repeat={Infinity}
+                                    />
                                 </Typography>
-                                <Link to="#" className="main-slider-btn">
+                                <Link
+                                    to="/articles/check-our-perfect-beard-styles/"
+                                    className="main-slider-btn"
+                                >
                                     read more
                                 </Link>
                             </div>
@@ -75,9 +88,21 @@ const MainSlider = (props: Props) => {
                                     component="h1"
                                     variant="h1"
                                 >
-                                    get your beard done properly
+                                    <TypeAnimation
+                                        sequence={[
+                                            '',
+                                            2000,
+                                            'get your beard done properly',
+                                            2000,
+                                        ]}
+                                        speed={10}
+                                        repeat={Infinity}
+                                    />
                                 </Typography>
-                                <Link to="#" className="main-slider-btn">
+                                <Link
+                                    to="/articles/get-your-beard-done-properly/"
+                                    className="main-slider-btn"
+                                >
                                     read more
                                 </Link>
                             </div>
@@ -101,9 +126,21 @@ const MainSlider = (props: Props) => {
                                     component="h1"
                                     variant="h1"
                                 >
-                                    a perfect suit for your next meeting
+                                    <TypeAnimation
+                                        sequence={[
+                                            '',
+                                            2000,
+                                            'a perfect suit for your next meeting',
+                                            2000,
+                                        ]}
+                                        speed={10}
+                                        repeat={Infinity}
+                                    />
                                 </Typography>
-                                <Link to="#" className="main-slider-btn">
+                                <Link
+                                    to="/articles/a-perfect-suit-for-your-next-mitting/"
+                                    className="main-slider-btn"
+                                >
                                     read more
                                 </Link>
                             </div>

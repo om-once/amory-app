@@ -45,6 +45,9 @@
         display: block;
         border-radius: 50%;
     }
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .reviews-item-title {
@@ -74,44 +77,4 @@
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 2em;
-}
-
-.reviews-form {
-    padding: 20px 0;
-}
-
-.reviews-form-group {
-    margin-bottom: 20px;
-}
-
-.reviews-form-input {
-    padding: 15px 10px;
-    background: #eee;
-    border: none;
-    width: 50%;
-    outline: none;
-    color: #343434;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.reviews-form-textarea {
-    width: 100%;
-    resize: none;
-    height: 165px;
-    margin-top: 40px;
-}
-
-.reviews-form-label {
-    font-size: 16px;
-    line-height: 2em;
-}
-
-.reviews-form-btn {
-    margin-top: 10px;
-    font-size: 14px;
-    padding: 3px 20px;
-    border-radius: 2px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
 }

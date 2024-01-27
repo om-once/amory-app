@@ -14,7 +14,7 @@ const Author = (props: Props) => {
                     image="/images/avatar1.jpg"
                     alt="green iguana"
                 />
-                <div className="description">
+                <div className="author-description">
                     Hello, my name is <strong>Amory.</strong> I am a blogger
                     living in New York. This is my blog, where I post about my
                     lifestyle and traveling. Never miss out on new stuff.

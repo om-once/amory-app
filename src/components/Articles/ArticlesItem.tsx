@@ -8,8 +8,8 @@ import { useState } from 'react'
 import { ArticlesArray } from 'utils/articlesArray'
 import Reviews from 'components/Reviews/Reviews'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
-import FavoriteBorder from '@mui/icons-material/FavoriteBorder'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt'
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt'
 import { toggleLikeState } from 'store/likeReducer'
 type ArticlesItemType = {
     id: number
@@ -60,7 +60,6 @@ const ArticlesItem = ({
         'en-US',
         options
     )
-    console.log(formattedDate)
 
     const [reviewsArray, setReviewsArray] = useState(
         ArticlesArray.filter((item) => item.title === title).flatMap(
@@ -148,7 +147,7 @@ const ArticlesItem = ({
                     <Typography
                         variant="h2"
                         component="h2"
-                        className="article-item-title"
+                        className="title-h2"
                     >
                         <Link to={link}>{title}</Link>
                     </Typography>
@@ -171,12 +170,12 @@ const ArticlesItem = ({
                     )}
                 </Link>
                 <div
-                    className="article-item-description"
+                    className="description"
                     dangerouslySetInnerHTML={{ __html: description }}
                 ></div>
                 {descriptionSet === true ? (
                     <div
-                        className="article-item-description"
+                        className="description"
                         dangerouslySetInnerHTML={{ __html: descriptionFull }}
                     ></div>
                 ) : null}
@@ -210,7 +209,11 @@ const ArticlesItem = ({
                             type="button"
                             onClick={() => dispatch(toggleLikeState(id))}
                         >
-                            {isLiked ? <FavoriteIcon /> : <FavoriteBorder />}
+                            {isLiked ? (
+                                <ThumbUpAltIcon />
+                            ) : (
+                                <ThumbUpOffAltIcon />
+                            )}
                         </button>
                     </p>
                 </footer>
