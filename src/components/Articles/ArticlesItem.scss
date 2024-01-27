@@ -19,7 +19,7 @@
     gap: 10px;
     @media (max-width: 600px) {
         flex-direction: column;
-        gap: 5px;
+        gap: 2px;
     }
 }
 
@@ -32,6 +32,9 @@
     transition: 0.3s all linear;
     &:hover {
         color: #509ba0;
+    }
+    @media (max-width: 600px) {
+        font-size: 14px;
     }
 }
 
