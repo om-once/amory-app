@@ -27,6 +27,7 @@ type ArticlesItemType = {
     tagsSet: boolean
     tags: string[]
     link: string
+    liked: boolean
 }
 const ArticlesItem = ({
     id,
@@ -44,6 +45,7 @@ const ArticlesItem = ({
     link,
     authorImage,
     authorText,
+    liked
 }: ArticlesItemType) => {
     const currentDate: Date = new Date()
 
@@ -118,6 +120,7 @@ const ArticlesItem = ({
     }
 
     const isLiked = useAppSelector((state) => state.articlesLikeState[id])
+    liked = isLiked
     const dispatch = useAppDispatch()
 
     return (
@@ -209,7 +212,7 @@ const ArticlesItem = ({
                             type="button"
                             onClick={() => dispatch(toggleLikeState(id))}
                         >
-                            {isLiked ? (
+                            {liked ? (
                                 <ThumbUpAltIcon />
                             ) : (
                                 <ThumbUpOffAltIcon />

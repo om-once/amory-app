@@ -22,6 +22,7 @@ export type ArticleType = {
     tags: string[]
     link: string
     reviews: Review[]
+    liked: boolean
 }
 
 export const ArticlesArray: ArticleType[] = [
@@ -116,6 +117,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['boss', 'lifestyle'],
         link: '/articles/how-to-become-your-own-boss/',
         reviews: [],
+        liked: false
     },
     {
         id: 2,
@@ -251,6 +253,7 @@ export const ArticlesArray: ArticleType[] = [
                 reviewDate: 'March 5, 2017 at 11:17 pm',
             },
         ],
+        liked: false
     },
     {
         id: 3,
@@ -343,6 +346,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['gallery', 'lifestyle'],
         link: '/articles/this-is-a-galery-post/',
         reviews: [],
+        liked: false
     },
     {
         id: 4,
@@ -435,6 +439,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['photography', 'video'],
         link: '/articles/this-is-a-video-post/',
         reviews: [],
+        liked: false
     },
     {
         id: 5,
@@ -549,6 +554,7 @@ export const ArticlesArray: ArticleType[] = [
                 reviewDate: 'December 3, 2014 at 12:17 pm',
             },
         ],
+        liked: false
     },
     {
         id: 6,
@@ -670,6 +676,7 @@ export const ArticlesArray: ArticleType[] = [
                 reviewDate: 'June 3, 2015 at 12:17 pm',
             },
         ],
+        liked: false
     },
     {
         id: 7,
@@ -762,6 +769,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['accessories', 'shoes'],
         link: '/articles/perfect-accessories/',
         reviews: [],
+        liked: false
     },
     {
         id: 8,
@@ -854,6 +862,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['dinner', 'food', 'lifestyle'],
         link: '/articles/check-our-perfect-beard-styles/',
         reviews: [],
+        liked: false
     },
     {
         id: 9,
@@ -946,6 +955,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['bike', 'lifestyle', 'motorcycle'],
         link: '/articles/long-bike-ride/',
         reviews: [],
+        liked: false
     },
     {
         id: 10,
@@ -1038,6 +1048,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['chef', 'food', 'lifestyle'],
         link: '/articles/prepare-food-like-a-chef/',
         reviews: [],
+        liked: false
     },
     {
         id: 11,
@@ -1130,6 +1141,7 @@ export const ArticlesArray: ArticleType[] = [
         tags: ['audio', 'post'],
         link: '/articles/this-is-audio-post/',
         reviews: [],
+        liked: false
     },
     {
         id: 12,
@@ -1265,5 +1277,6 @@ export const ArticlesArray: ArticleType[] = [
                 reviewDate: 'March 5, 2017 at 11:17 pm',
             },
         ],
+        liked: false
     },
 ]

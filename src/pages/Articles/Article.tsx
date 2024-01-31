@@ -32,6 +32,7 @@ const Article = ({ categoryTitle }: Props) => {
                                             link,
                                             authorImage,
                                             authorText,
+                                            liked
                                         }) => (
                                             <ArticlesItem
                                                 key={id}
@@ -52,6 +53,7 @@ const Article = ({ categoryTitle }: Props) => {
                                                 link={link}
                                                 authorImage={authorImage}
                                                 authorText={authorText}
+                                                liked={liked}
                                             />
                                         )
                                     )}

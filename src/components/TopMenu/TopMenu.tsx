@@ -144,10 +144,10 @@ const TopMenu = (props: Props) => {
                 </ListItem>
                 <ListItem className="top-menu-item">
                     <NavLink
-                        to="buy"
+                        to="/category/favourites/"
                         className="top-menu-link top-menu-link-not"
                     >
-                        Buy
+                        Favourites
                     </NavLink>
                 </ListItem>
             </List>

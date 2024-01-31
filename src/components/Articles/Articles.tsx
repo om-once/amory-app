@@ -47,6 +47,7 @@ const Articles = ({ categoryName, pageCount }: Props) => {
                               link,
                               authorImage,
                               authorText,
+                              liked
                           }) => (
                               <ArticlesItem
                                   key={id}
@@ -65,6 +66,7 @@ const Articles = ({ categoryName, pageCount }: Props) => {
                                   link={link}
                                   authorImage={authorImage}
                                   authorText={authorText}
+                                  liked={liked}
                               />
                           )
                       )
@@ -87,6 +89,7 @@ const Articles = ({ categoryName, pageCount }: Props) => {
                                   link,
                                   authorImage,
                                   authorText,
+                                  liked
                               }) => (
                                   <ArticlesItem
                                       key={id}
@@ -105,6 +108,7 @@ const Articles = ({ categoryName, pageCount }: Props) => {
                                       link={link}
                                       authorImage={authorImage}
                                       authorText={authorText}
+                                      liked={liked}
                                   />
                               )
                           )}

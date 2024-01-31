@@ -8,6 +8,7 @@ import AboutUs from 'pages/AboutUs/AboutUs'
 import Article from 'pages/Articles/Article'
 import Category from 'pages/category/Category'
 import ScrollTop from 'components/ScrollTop/ScrollTop'
+import Favourites from 'pages/Favourites/Favourites'
 type Props = {}
 
 const App = (props: Props) => {
@@ -123,6 +124,10 @@ const App = (props: Props) => {
                 <Route
                     path="/articles/out-trip-into-the-wild/"
                     element={<Article categoryTitle="OUT TRIP INTO THE WILD" />}
+                />
+                <Route
+                    path="/category/favourites/"
+                    element={<Favourites/>}
                 />
             </Routes>
             <Footer />

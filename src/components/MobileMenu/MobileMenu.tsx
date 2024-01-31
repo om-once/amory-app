@@ -185,10 +185,10 @@ const MobileMenu = (props: Props) => {
                     </ListItem>
                     <ListItem className="mobile-menu-item">
                         <Link
-                            to="#"
+                            to="/category/favourites/"
                             className="mobile-menu-link mobile-menu-link-not"
                         >
-                            Buy
+                            Favourites
                         </Link>
                     </ListItem>
                 </List>
